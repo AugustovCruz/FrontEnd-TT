@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../contacto/contacto.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Inter&family=Lato:ital,wght@0,100;0,300;1,100&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Inter&family=Lato:ital,wght@0,100;0,300;1,100&family=Roboto:ital,wght@0,100;0,300;1,100&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav" >
+            <ul>
+                <li> <a href="../../index.html">Inicio</a></li>
+                <li> <a href="../productos/productos.html">Productos</a></li>
+                <li> <a href="../reviews/reviews.html">Reseñas</a></li>
+                <li> <a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    
+                <button type="submit">Enviar</button>
+            </form>
+            <article class="contacto-map" >
+                <p>Estamos ubicados:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.1885334678554!2d-57.95456639515341!3d-34.92140027176715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses!2sar!4v1658553281377!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="footer"  >
+        <p> ®Todos los derechos reservados</p>
+    </footer>
+
+
+</body>
+</html>

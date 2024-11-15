@@ -1,0 +1,78 @@
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    color: black;
+}
+
+.container-contacto{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form {
+    color: rgba(100, 20, 20, 0.658);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsla(213, 22%, 80%, 0.5);
+    border-radius: 8px;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-map {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+.contacto-map iframe{
+    width:65%;
+    height: 50vh;
+    border: 2px solid black;
+    border-radius: 5%;
+
+}
+
+.contacto-map p {
+    font-size:"Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+    background-color: rgb(20, 83, 119);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    text-transform: uppercase;
+}
