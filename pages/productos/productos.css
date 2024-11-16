@@ -1,0 +1,10 @@
+body {
+    background: #f9f9f9;
+}
+.title-product {
+    text-align: center;
+    margin: 1rem;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
