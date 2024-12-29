@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Inter&family=Lato:ital,wght@0,100;0,300;1,100&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <!-- Google fonts icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
     <link rel="stylesheet" href="./styles.css">
 
     <title>Document</title>
@@ -20,6 +22,11 @@
                 <li> <a href="./pages/reviews/reviews.html">Reseñas</a></li>
                 <li> <a href="./pages/contacto/contacto.html">Contacto</a></li>
             </ul>
+            <button class="btn-cart" id="button-cart" >
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </button>
         </nav>
     </header>
 
@@ -30,9 +37,9 @@
         </section>
 
         <!-- Productos Destacados-->
-        <section class="off-products">
+        <section class="off-products"  >
             <h2>Productos Destacados</h2>
-            <div class="product-list">
+            <div class="product-list" id="main-products" >
                 <div class="product">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYGPIeKonJF-Rx3tNpWcFAqmdqD_6FXBMkA&s" alt="Producto 1">
                     <h3>Producto 1</h3>
@@ -53,11 +60,60 @@
                 </div>                
             </div>
         </section>
+
+        <section class="carrito " id="cart">
+            <h2> 🛒 Mi Carrito</h2>
+            <button id="close" >Cerrar</button>
+            <hr>
+            <article>
+                <div class="product-cart">
+                    
+                    <img src="https://i.ebayimg.com/thumbs/images/g/usgAAOSwqCdey-61/s-l640.jpg" alt="ropa">
+                    <p>Descripcion</p>
+                    <section class="product-item">
+                        <p>Precio:</p>
+                        <p>Stock:</p>
+                    </section>
+                    <section class="product-item">
+                        <p>Cantidad</p>
+                        <div class="btn-cart">
+                            <button>-</button> <span>1</span> <button>+</button>
+                        </div>
+                    </section>
+                    <section class="trash">
+                        <button> 🗑 </button>
+                    </section>            
+                </div>
+            </article>
+            <article>
+                <div class="product-cart">
+                    
+                    <img src="https://i.ebayimg.com/thumbs/images/g/usgAAOSwqCdey-61/s-l640.jpg" alt="ropa">
+                    <p>Descripcion</p>
+                    <section class="product-item">
+                        <p>Precio:</p>
+                        <p>Stock:</p>
+                    </section>
+                    <section class="product-item">
+                        <p>Cantidad</p>
+                        <div class="btn-cart">
+                            <button>-</button> <span>1</span> <button>+</button>
+                        </div>
+                    </section>
+                    <section class="trash">
+                        <button> 🗑 </button>
+                    </section>            
+                </div>
+            </article>            
+        </section>
+    
     </main>
+
+
 
     <footer class="footer"  >
         <p> ®Todos los derechos reservados</p>
     </footer>
-
+    <script src="./script.js"></script>
 </body>
 </html>
