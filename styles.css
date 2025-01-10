@@ -103,8 +103,9 @@ main{
 }
 
 .carrito {
+    z-index: 1;
     height: 100vh;
-    background-color: #13407470;
+    background-color: #f9f9f9;
     position: fixed;
     right: 0;
     top: 0;
@@ -119,6 +120,9 @@ main{
     justify-content: space-around;
     align-items: center;
     gap: 16px;
+    margin: 32px 0px;
+    border-radius: 15px; 
+    border: 2px solid rgb(20 83 119);
 }
 .carrito .product-cart .btn-cart {
     display: flex;
@@ -182,6 +186,32 @@ button:hover {
         margin: 0 5vh;
     }
 }
+
+
+
+.background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.background-visible {
+    display: block;
+}
+
+.finalizar-compra {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0px;
+}
+
 
 
 

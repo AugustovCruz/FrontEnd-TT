@@ -34,11 +34,13 @@ body {
                 border-bottom: 1px solid #ccc;
                 margin-top: 16px;
                 font-size: 18px;
+                width: 100%;
+                
                 a {
                     color: inherit;
                 }
                 a:hover {
-                    color: blueviolet
+                    color: rgb(34 83 119);
                 }
             }
         }
@@ -46,9 +48,8 @@ body {
     }
 }
 
-/* display: flex
-;
-    flex-grow: 1;
-    flex-basis: 0;
-    margin-right: 16px;
-    align-items: center; */
+.titulo-carrito {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}

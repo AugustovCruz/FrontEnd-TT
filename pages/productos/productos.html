@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="./productos.css">
     <title>Document</title>
 </head>
-<body>
 
+<body>
+    
+    <div class="background"></div>
     <header>
         <nav class="nav" >
             <ul>
@@ -38,29 +40,31 @@
         <aside class="sidebar">
             <h3>Categorias:</h3>
             <ul>
-                <li><a href="">Ropa</a></li>
-                <li><a href="">Tecnologia</a></li>
-                <li><a href="">Bebidas</a></li>
-                <li><a href="">Alcohol</a></li>
+                <li><a id="Todos"   class="boton-categoria" href="">Todos</a></li>
+                <li><a  id="Android"   class="boton-categoria"  href="">Androide</a></li>
+                <li><a  id="Frieza Race"     class="boton-categoria"  href="">Frieza Race</a></li>
+                <li><a  id="Saiyan"    class="boton-categoria"  href="">Sayayin</a></li>
+                <li><a  id="Namekian"  class="boton-categoria"  href="">Namekusein</a></li>
             </ul>
         </aside>
 
         <section class="product-list" id="main-products">
-            <div class="product">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYGPIeKonJF-Rx3tNpWcFAqmdqD_6FXBMkA&s" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <p>Precio: $100</p>
-                <button>Añadir al Carrito</button>
-            </div>
+            <!-- Js de Productos -->
         </section>
 
 
         <section class="carrito " id="cart">
-            <h2> 🛒 Mi Carrito</h2>
-            <button id="close" >Cerrar</button>
-            
+            <article class="titulo-carrito">
+                <h2> <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg> Mi Carrito</h2>
+                <button id="close" >Cerrar</button>
+            </article>
+            <hr>            
             <article id="cart-products">
                 <!-- js del carrito -->
+            </article>
+            <article class="finalizar-compra" >
+                <button id="vaciar-carrito" >Vaciar Carrito</button>
+                <button>Finalizar Compra</button>
             </article>            
         </section>
     </article>
